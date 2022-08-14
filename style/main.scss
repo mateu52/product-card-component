@@ -1,18 +1,25 @@
 body{
     box-sizing: border-box;
+    top:0;
     margin:0;
     padding:0;
-    background-color: beige;
-    height: 100vh;
+    background-color: rgb(248, 204, 198);
+    height: 100%;
     width: 100%;
     position:absolute;
     background-size: 100%;
-}
-.site{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+}
+.site{
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    width:550px;
+    min-height: 390px;
     p{
         font-size: 11px;
     }
@@ -20,16 +27,23 @@ body{
         font-size: 24px;
     }
 }
-.Image{
+.site .Image{
+    border-radius: 20px 0px 0px 20px;
     background-image: url('../images/image-product-desktop.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    flex:1;
+    height: 390px;
 }
-.site-info{
-    width: 250px;
-    height: 400px;
+.site .site-info{
+    border-radius: 0px 20px 20px 0px;
+    flex:1;
+    max-width: 50%;
+    min-height: 390px;
+    padding: 20px;
+    background-color: whitesmoke;
+    background-size: 100%;
 }
 .attribution { 
     font-size: 11px; 
@@ -44,12 +58,13 @@ body{
         flex-direction: column;
         justify-items: center;
         justify-content: center;
+        
     }
     .Image{
         background-image: url('../images/image-product-mobile.jpg');
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 180px;
+        height: 170px;
     }
     .site-info{
         height: 300px;
