@@ -39,6 +39,7 @@ body {
 .site p.price {
   color: green;
   font-size: 28px;
+  font-family: "Playfair Display", serif;
 }
 .site p.sale {
   font-size: 14px;
